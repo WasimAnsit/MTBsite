@@ -1,0 +1,64 @@
+.imgcontainero {
+  padding: 15px; /* Reduced padding slightly */
+  padding-bottom: 5px; /* Less bottom padding */
+}
+
+.buttono {
+  margin: 0;
+  background: linear-gradient(90deg, #8F2C71 0%, #E03486 100%);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 90%; /* Set consistent width */
+}
+
+.buttono:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+#loginEmailo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0 !important;
+  gap: 10px;
+  width: 100%;
+}
+
+#loginOTPo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0 !important;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-group {
+  width: 90%;
+  margin-bottom: 0 !important;
+}
+
+#email-logino,
+#otp-login {
+  padding-inline: 10px;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Reduced gap to fit better */
+  width: 100%;
+  margin-top: 10px; /* Add some top margin */
+}
+
+.avataro {
+  max-width: 180px; /* Slightly smaller logo */
+  margin: 0 auto;
+}

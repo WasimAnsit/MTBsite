@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dncrproperty.com - Apartments for sale | Properties in delhi | Apartments for rent in Delhi NCR</title>
+    <meta name="keywords" content="apartments for sale, properties in delhi, apartments for rent in delhi ncr" >
+  <meta name="description" content="Home is where the heart is!,No matter you are renting, selling or buying a property in Delhi NCR We are here for you to help!" >
+  <link rel="canonical" href="https://dncrproperty.com/" >
+
+  <meta property="og:title" content="dncrproperty" >
+  <meta property="og:site_name" content="dncrproperty" >
+  <meta property="og:type" content="website" >
+  <meta property="og:description"
+    content="Properties to buy in city,Let's start your journey with us, your dream will come true" >
+
+  <meta name="author" content="dncrproperty.com" >
+  <meta name="googlebot" content="index, follow" >
+  <meta name="yahooseeker" content="index, follow" >
+  <meta name="msnbot" content="index, follow" >
+  <meta name="robots" content="index, follow" >
+  <meta name="distribution" content="INDIA" >
+  <meta name="revisit-after" content="3 days" >
+  <meta name="rating" content="general" >
+  <meta name="language" content="en-us" >
+  <meta name="document-type" content="Public" >
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link href="/assets/css/responsive.css" rel="stylesheet">
+    <script src="./assets/app.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+
+    <!-- <div class="social">
+    <ul>
+      <li class="colrfb"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li class="colrinsta"><a href="#" target="_blank"><i class="fa fa-google"></i></a></li>
+      <li class="colrtw"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li class="colrlink"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      
+    </ul>
+    
+  </div> -->
+    <!-- <li class="colrpin"><a href="https://www.pinterest.com/immatrimony" target="_blank"><i class="fa fa-pinterest"></i></a></li> -->
+    <!-- <li class="colrgo"><a href="@AppSettings.GooglePlus" target="_blank"><i class="fa fa-google-plus"></i></a></li> -->
+    <!-- <li class="colrinsta"><a href="https://www.instagram.com/immatrimony" target="_blank"><i class="fa fa-instagram"></i></a></li> -->
+
+
+    <div id="map"></div>
+    <div id="map1"></div>
+    <div id="map2"></div>
+
+    <div id="navbar-placeholder"></div>
+
+
+
+
+    <!-- demo2 -->
+    <div class="loginModal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content clsLogin">
+                    <div class="modal-header bg-theme bg-primary" style="width: 100.1%; ">
+                        <b class="modal-title" id="loginheader"
+                            style="font-family: 'Lusitana',; color:rgb(90, 90, 90); font-size: 18px;" >Login</b>
+                        <h5 class="modal-title" id="forgetheader" style="display: none;">Enter Your Details</h5>
+                        <button type="button" class="closebtn" id="closelogin" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"
+                                style="color:rgb(90, 90, 90); font-weight: bold; font-size: 19px; cursor: pointer;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="login-modal" style="padding: 0px;">
+                        <h5 class="text-danger text-center ng-star-inserted" id="invalidUser-login"
+                            style="display: none;">
+                            Password looks incorrect!</h5>
+                        <h5 class="text-success text-center" id="checkemailresetpwd" style="display: none;">Check your mailbox to Reset your password</h5>
+  
+                        <h5 class="text-danger text-center" id="mailnotsent" style="display: none;">Issue while sending email, You can try one time</h5>
+  
+                        <form name="loginForm" style="padding: 17px;margin-top: -18px;">
+                            <div class="form-group">
+                                <div class="input_wrap" id="loginEmail">
+                                    <input type="text" placeholder="" required class="form-control floatingLabel clsPopup" name="Email" id="email-login" onblur="addRequired('email-login')" oninput="removeValidation(true)" >
+                                    <label>Your registered email</label>
+                                </div>
+                                <small class="text-danger" style="display: none;" id="email-req-login">* Required</small>
+                                <small class="text-danger" style="display: none;" id="emaildoesnotexist-login">* Email id does not Exist in system, Check your email id</small>
+                            </div>
+                            <div class="form-group mb-1" style="display: none;" id="loginPassword">
+                                <div class="input_wrap">
+                                    <input type="password" placeholder="" onblur="addRequired('password-login')" class="form-control floatingLabel clsPopup" required name="Password"
+                                    id="password-login" oninput="removeValidation(false)" onkeyup="loginonEnter()" >
+                                    <label id="password-login-text">Password</label>
+                                </div>
+                                <em class=" fa fa-eye-slash eyeIcon " onclick="iconClick()" id="togglePassword" ></em>
+                                <small class="text-danger" style="display: none;"
+                                    id="password-req-login">* Required</small>
+                            </div>
+                        </form>
+                        <div class="row mx-3">
+                            <a class="align-self-start" style="cursor: pointer;font-size: 16px;color:#0095f6"
+                                data-target="forgetpasswordModal" id="forgetPassword-btn" data-toggle="modal"
+                                onclick="openforgetPassword()"><u>Forget Password ?</u></a>
+                        </div>
+                        <div>
+                            <button class="mx-auto btn-lg  bg-theme clsSearchbutton " onclick="nextOrPreviousStep(true)" id="nextStepButton" >Continue
+                                <i class="fa fa-circle-notch bg-theme-search fa-spin ml-1" id="nextStepButton1"
+                                    style="display: none;"></i></button>
+                            <button class="mx-auto btn-lg  bg-theme searchbutton " style="display: none;"  onclick="login()" id="btn-login" >Login
+                                <i class="fa fa-circle-notch bg-theme-search fa-spin ml-1" id="loginspinner"
+                                    style="display: none;"></i></button>
+                            <button class="mx-auto bg-theme searchbutton btn-lg" onclick="forgetPassword()"
+                                id="continue-forget" style="display: none;">Continue <i
+                                    class="fa fa-circle-notch bg-theme-search fa-spin ml-1" id="login-spinner"
+                                    style="display: none;"></i></button>
+                        </div>
+  
+  
+                        <br>
+                        <div class="line-thin"></div>
+  
+                        <div class="d-flex justify-content-center" id="bottom-signUp" style="background-color: #f0f0f0;padding: 15px;border-radius: 0 0 5px 5px;"> New to dncrproperty.com? <a class="ml-2"
+                            style="cursor: pointer;color:#007bff" onclick="opensignup()"><u>Sign Up</u></a></div>
+                        
+                    </div>
+                    <div id="signup-modal" style="display: none;" class="px-3">
+                        <form name="signupForm">
+                            <h5 class="text-danger text-center ng-star-inserted" id="invalidrespone-signup" style="display: none;">
+                              Issue while sending email, You can try one time</h5>
+                            <h5 class="text-success text-center ng-star-inserted" id="validrespone-signup" style="display: none;">
+                              Check your mailbox for next instructions</h5>
+                            <div id="field-signup">
+                              <div class="form-group">
+                                <div class="input_wrap">
+                                  <input type="text" placeholder="" onblur="addRequired('email-signup');isValidEmail('email-signup','notValidEmail')" required
+                                  onfocus="removeValid('notValidEmail')"
+                                    class="form-control clsPopup floatingLabel" name="signupEmail" id="email-signup"
+                                    oninput="signupremoveValidation(true)" >
+                                  <label>Email<span class="text-danger">*</span></label>
+                                </div>
+                                <small class="text-danger" style="display: none;color: red;" id="email-req-signup">* Required</small>
+                                <small class="text-danger" style="display: none;color: red;" id="emailalreadyexist">* Email id already
+                                  Exist, Try other email id</small>
+                                  <small class="text-danger" style="display: none;color: red;" id="notValidEmail">* Invalid Email</small>
+                              </div>
+                              <div class="form-group increment_hidder">
+                                <div class="input_wrap">
+                                  <input type="text" placeholder="" onblur="addRequired('mobile-signup');isNumberValid('mobile-signup','notValidMobile')" required
+                                  onfocus="removeValid('notValidMobile')"
+                                    class="form-control clsPopup floatingLabel" name="signupMobile"
+                                    onKeyPress="if(this.value.length==10) return false;" id="mobile-signup"
+                                    oninput="signupremoveValidation(false);this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')" >
+                                  <label>Mobile<span class="text-danger">*</span></label>
+                                </div>
+                                <small class="text-danger" style="display: none;color: red;" id="mobile-req-signup">* Required</small>
+                                <small class="text-danger" style="display: none;color: red;" id="notValidMobile">* Mobile number should be 10 digit</small>
+                              </div>
+                              <div class="form-group">
+                                <div class="input_wrap">
+                                  <input type="text" placeholder="" onblur="addRequired('name-signup')" required
+                                    class="form-control clsPopup floatingLabel" name="signupName" id="name-signup"
+                                    oninput="signupremoveValidation(false)" >
+                                  <label>Name<span class="text-danger">*</span></label>
+                                </div>
+                                <small class="text-danger" style="display: none;color: red;" id="name-req-signup">* Required</small>
+                              </div>
+                              <div class="form-group">
+                                <div class="input_wrap">
+                                  <input type="text" placeholder="" required class="floatingLabel clsPopup form-control ng-pristine ng-valid pac-target-input ng-touched d-flex
+               google-location-input pac-input" onblur="addRequired('location-signup')" name="signupLocation" id="location-signup"
+                                    oninput="signupremoveValidation(false)" >
+                                  <label>Your current location<span class="text-danger">*</span></label>
+                                </div>
+                                <input type="text" id="storevalue1" style="display: none">
+                                <input type="text" style="display: none;">
+                                <small class="text-danger" style="display: none;color: red;" id="location-req-signup">*
+                                  Required</small>
+                              </div>
+                            </div>
+              
+                          </form>
+                        <div class="g-recaptcha" id="rcaptchaa" style="text-align: -moz-center;" data-sitekey="6LcgjPYiAAAAAM2wuq2l08xX7ExR5Vmy3bzM20rp" data-callback="correctCaptcha2"></div>
+                        <span id="captcha" style="margin-left:100px;color:red"></span>
+                        <div class="row" id="tandcbox" style="align-items: baseline;justify-content: center">
+                            <input type="checkbox" onclick="signUpCheckBox()" id="accpectance" name="accpectance">
+                            <p  class="col-md-11" style="font-size:14px"> I agree to dncrproperty.com <a href="./terms_conditions.html" target="_blank"><u>T&C</u></a>, <a target="_blank" href="./privacy_policy.html"><u>Privacy Policy</u></a> & Cookie Policy.</p>
+                            </div>
+                        <div class="d-flex signupBTN">
+                            <button
+                                class="btn btn float-right align-items-center login-button mx-auto searchbutton searchbutton" style="width: 100%;"
+                                type="submit" onclick="signup()" id="btn-signup">Sign Up <i
+                                    class="fa fa-circle-notch bg-theme-search fa-spin ml-1" id="spinner-signup"
+                                    style="display: none;"></i>
+                            </button>
+  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Done demo2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="buysellModal">
+        <div class="modal fade" id="buysellmodal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content clsLogin">
+                    <div class="modal-header bg-theme bg-primary" style="width: 100.1%;">
+                        <h5 class="modal-title" style="color: #555;">Fill Details</h5>
+                        <h5 class="text-danger text-center ng-star-inserted" id="invalidresponeotppost" style="display: none;">OTP verification failed, Retry!</h5>
+                        <button type="button" class="closebtn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: #555; font-weight: bold; font-size: 19px;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="buysellForm">
+                            <div id="buysellModalBody">
+                                <h5 class="text-danger text-center ng-star-inserted" id="invalidresponeseller" style="display: none">
+                                  Issue while sending email, You can try one time
+                                </h5>
+                
+                                <div class="form-group">
+                                  <div class="input_wrap">
+                                    <input type="text" placeholder="" required class="floatingLabel form-control" name="buysellEmail"
+                                      id="buysellEmail" onfocus="removeValid('invalidPropertyEmail')" onblur="addRequired('buysellEmail');isValidEmail('buysellEmail','invalidPropertyEmail')" oninput="removevalidationBuySell()" style="padding-left: 14px;" >
+                                    <label style="margin-left: 14px;">Email<span class="text-danger" >*</span></label>
+                                  </div>
+                                  <small class="text-danger" style="display: none" id="buysellemail">* Required</small>
+                                  <small class="text-danger" style="display: none" id="sellbuyemailalreadyexist">Email id already Exist,
+                                    Try other email id</small>
+                                    <small class="text-danger" style="display: none" id="invalidPropertyEmail">* Invalid Email</small>
+                                </div>
+                                <div class="form-group increment_hidder">
+                                  <div class="input_wrap">
+                                    <input type="text" placeholder="" required class="floatingLabel form-control"
+                                      onKeyPress="if(this.value.length==10) return false;" name="buysellMobile" id="buysellMobile"
+                                      onfocus="removeValid('invalidMobile')" onblur="addRequired('buysellMobile');isNumberValid('buysellMobile','invalidMobile')"  oninput="removevalidationBuySell();this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')" style="padding-left: 14px;" >
+                                    <label style="margin-left: 14px;">Mobile<span class="text-danger" >*</span></label>
+                                  </div>
+                                  <small class="text-danger" style="display: none" id="buysellmobile">* Required</small>
+                                  <small class="text-danger" style="display: none" id="invalidMobile">* Mobile number should be 10 digit</small>
+                                </div>
+                                <div class="form-group">
+                                  <div class="input_wrap">
+                                    <input type="text" placeholder="" onblur="addRequired('buysellName')" required
+                                      class="floatingLabel form-control" name="buysellName" id="buysellName"
+                                      oninput="removevalidationBuySell()" style="padding-left: 14px;" >
+                                    <label style="margin-left: 14px;">Name<span class="text-danger" >*</span></label>
+                                  </div>
+                                  <small class="text-danger" style="display: none" id="buysellname">* Required</small>
+                                </div>
+                                <div class="form-group">
+                                  <div class="input_wrap">
+                                    <input type="text" placeholder="" onblur="addRequired('buysellLocation')" required
+                                      class="floatingLabel form-control google-location-input" name="buysellLocation"
+                                      id="buysellLocation" oninput="removevalidationBuySell()" style="padding-left: 14px;" >
+                                    <label style="margin-left: 14px;">Your property area or location<span class="text-danger" >*</span></label>
+                                  </div>
+                                  <input style="display: none" id="storevalue2" >
+                                  <small class="text-danger" style="display: none" id="buyselllocation">* Required</small>
+                                </div>
+                                <div class="g-recaptcha" id="rcaptcha" style="text-align: -moz-center;"
+                                  data-sitekey="6LcgjPYiAAAAAM2wuq2l08xX7ExR5Vmy3bzM20rp" data-callback="correctCaptcha1"></div>
+                                <span id="captcha" style="margin-left: 100px; color: red"></span>
+                                <div class="row" id="tandcbox1" style="align-items: baseline;justify-content: center">
+                                  <input type="checkbox" onclick="listpropCheckBox()" id="accpectance1" name="accpectance1">
+                                  <p  class="col-md-11" style="font-size:14px"> I agree to dncrproperty.com <a
+                                      href="./terms_conditions.html" target="_blank"><u>T&C</u></a>, <a target="_blank"
+                                      href="./privacy_policy.html"><u>Privacy Policy</u></a> & Cookie Policy.</p>
+                                </div>
+                              </div>
+                              <div id="otp" style="display: none">
+                                <div class="form-group">
+                                  <h6 class="mb-2">OTP has been sent on your email id</h6>
+                                  <div class="input_wrap">
+                                    <input type="text" placeholder="" required class="floatingLabel form-control" id="buysellOtp"
+                                      oninput="signupremoveValidation()" style="padding-left: 15px;" onblur="addRequired('buysellOtp')" >
+                                    <label style="margin-left: 15px;">Enter OTP</label>
+                                  </div>
+                                  <small class="text-danger" style="display: none" id="buysellotp">* Required</small>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                  
+                    <div class="signupBTN d-flex" style="justify-content: center">
+                        <button
+                class="btn btn float-right align-items-center login-button mx-auto searchbutton searchbutton"
+                type="submit"
+                value="Login"
+                id="signupsubmit"
+                onclick="buysellSignup()"
+                style=" align-items: center"
+              >
+                Continue
+                <i
+                  class="fa fa-circle-notch bg-theme-search fa-spin ml-1"
+                  id="seller-signup-spinner"
+                  style="display: none"
+                ></i>
+              </button>
+                        <button class="float-right bg-theme searchbutton btn-lg" type="submit" value="Login" id="submitotp" onclick="submitOTP()" style="display: none;align-items: center">Continue
+                            <!-- <i class="fa fa-arrow-right bg-theme ml-1 submit-btn continue-btn" id="seller-otp-continue"></i> -->
+                            <i class="fa fa-circle-notch bg-theme-search fa-spin ml-1" id="seller-otp-spinner" style="display: none;"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="header" style="position: relative;">
+        <img src="./assets/images/Apartments_for_sale.jpg" alt="dncrproperty.com" class="img-reponsive " style="width:100%">
+        <div class="topheding">
+            <!-- <p class="text-center heding ">Privacy Policy</p> -->
+            <!-- <p class="text-center heding2">Home . About Us</p> -->
+        </div>
+        <div class="searchbar">
+
+            <!-- <input type="text" class="form-control " placeholder="Type Location or Project/Society" aria-label="Username" aria-describedby="basic-addon1">
+      <button type="button" class="searchbutton">Search</button> -->
+        </div>
+
+    </div>
+    <br>
+
+
+
+    <div class="container clsPrivacy">
+        <h1 class="text-primary ">Privacy Policy</h1>
+        <p>Welcome to dncrproperty.com! DNCRPROPERTY.COM is a website of DNCRPROPERTY.COM, an Indian Company
+            registered under the Companies Act, 2013, having its registered office at Jamia Nagar, New Delhi - 110 025.
+        </p>
+        <p>This Privacy Policy is subject to the terms of the Site Policy / User agreement of dncrproperty.com. This
+            Privacy Policy explains our strategy regarding collecting, using, disclosing, and transferring your
+            information by dncrproperty.com and other offline resources.</p>
+        <p>At dncrproperty.com, we value your privacy and truly appreciate your trust in us.</p>
+        <h1 class="text-primary ">Why do we collect information from you?</h1>
+        <p>dncrproperty.com is a free property listing website in Delhi, NCR. We use the information we collect from you
+            for:</p>
+        <div class="col-md-12">
+            <ul>
+                <li>Provide a personalized browsing experience</li>
+                <li>Help you find the most relevant information</li>
+                <li>To extend the personalized experience that exactly meets your needs, we may collect</li>
+            </ul>
+        </div>
+        <p>your computer's IP address and save certain information in the form of cookies. However, you have the option
+            to accept or decline the cookies by changing the settings of your browser.</p>
+        <p>Our goal with regards to this Privacy Policy is to be transparent about the users' information we collect and
+            how we use the gathered information.</p>
+        <h1 class="text-primary ">To whom does this policy apply?</h1>
+        <p>The privacy applies to all the Users I DNCRPROPERTY.COM. By users we mean, all current and former visitors of
+            our website and our online customers.</p>
+        <p>When you visit our website, you as a user agree to our privacy policy.</p>
+        <h1 class="text-primary ">What Information do we collect?</h1>
+        <p>We collect users' basic to advance information based on their activity on the site. Like:</p>
+        <p><b>Contact Information:</b>We collect your name, email address, mobile number, street, city, state, zip code,
+            and country.</p>
+        <p><b>Payment and Billing Information:</b>When you register your paid account with us, we collect your billing
+            name, address, and payment mode.</p>
+        <p>However, we never collect sensitive data like credit card numbers, expiry dates, or any other pertinent
+            information. Your card details are only processed by our online payment partner PayUMoney.</p>
+        <p><b>Information You Post: </b>We also gather the information you post on third-party social media sites
+            related to dncrproperty.com and from the public section of our website where you leave us feedback, comment,
+            change your email or content preferences, respond to a survey, or communicate in any way with us.</p>
+        <p><b>Log File Information:</b>When you use our website, we automatically collect some information. Such as your
+            IP address, the browser you are using, the site you came from, time duration you spent on our website, the
+            pages you accessed, the sites you visited after leaving our site.</p>
+        <p>Also, we may collect the data like the type of your mobile and the version of your computer's Operating
+            system.</p>
+        <h1 class="text-primary ">Where do we get your information from?</h1>
+        <p>We collect information directly from you, passively, or using third parties.</p>
+        <p><b>Direct information:</b>When you register with us or sign up with any other website. We retrieve your
+            information from the linked site. Also, we get information from your comments, emails, and phone calls.</p>
+        <p><b>Passive Information: </b>We get your information through tracking tools like Cookies Google Analytics,
+            Google Webmaster, web Beacons and collect information about your usage of our website.</p>
+        <p><b>Third-Party Information: </b>If you use an incorporated social media feature of our site, we may collect
+            your name and email address from there.</p>
+        <h1 class="text-primary ">How do we use your information?</h1>
+        <p>We use all this gathered information to contact you, to respond to your queries, to make our services better,
+            for security purposes, marketing purposes, for transactional communications, and as permitted by the law.
+        </p>
+        <h1 class="text-primary ">Email Opt-out:</h1>
+        <p>If you don't want to receive our marketing emails, please, email us. You'll be opted out within 1-2 days, but
+            we'll still send you transactional messages through email and SMS.</p>
+        <h1 class="text-primary ">Third-Party Sites:</h1>
+        <p>We are not responsible for the privacy practices of third-party sites. If you click on any third-party link
+            site and are redirected to websites, we can't control it. Read their privacy policy. Please!
+        </p>
+        <h1 class="text-primary ">Grievances:</h1>
+        <p>As per IT Act 2000 and rules made under, you can share your grievances on below contact details:</p>
+        <p>Phone: +91-9599265786</p>
+        <p>Have any questions regarding our privacy policy? Feel free to email us.</p>
+        <h1 class="text-primary ">Jurisdictions:</h1>
+        <P>If you visit this website, your visit and the dispute over this policy are subject to the website's terms of
+            use. Any disputes arising under this Policy shall be governed by the laws of India under New Delhi
+            jurisdiction.
+        </P>
+        <h1 class="text-primary ">Updates to this Policy:</h1>
+        <p>We may change our privacy practices from time to time. We'll notify you if we made any changes required by
+            law and update a copy to our website.
+        </p>
+        <p>Kindly keep checking our site from time to time to stay updated.</p>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" style="margin-top: 15px;">
+                    <h2>Company</h2>
+                    <ul>
+                        <li>
+                            <a href="./about.html">About </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html?is=true">Contact </a>
+                        </li>
+                        <li>
+                            <a href="./faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./careers.html">Career</a>
+                          </li>
+                        <li>
+                            <a href="./terms_conditions.html">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="./privacy_policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footertext" style="margin-top: 15px;">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>
+                            <a href="http://maps.google.com/?q=C-124/ASector 2 Noida 201301 Uttar Pradesh" target="_blank"><i class="fa fa-map-marker"
+                                    style="font-size: 20px; color: #fff;"></i>&nbsp;&nbsp;A-Block, Sector 2, Noida<br>
+                                Uttar Pradesh - 201301</a>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <i class="fa fa-phone" style="font-size: 20px; color: #fff;"></i>
+                            <a href="https://api.whatsapp.com/send?phone=917303062845" target="_blank"><i style="font-size: 20px;" class="fa fa-whatsapp mx-1"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=7303062845">&nbsp;&nbsp;+91
+                              7303062845</a>
+                        </li>
+                        <li><a style="margin-left: 50px;" href="https://api.whatsapp.com/send?phone=917303062845">&nbsp;&nbsp;+91 9718361550</a></li>
+                        <li style="margin-top: 10px;">
+                            <a href="mailto:info@dncrproperty.com"><i class="fa fa-envelope"
+                                    style="font-size: 20px; color: #fff;"></i>&nbsp;&nbsp;info@dncrproperty.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6" style="text-align: center;">
+                    <a class="navbar-brand" href="#"><img src="./assets/images/DNCRprperty_white_logo.png" alt="dncrproperty.com" style="height: 170px;" class="img-responsive"></a>
+                    <br>
+
+                    <div class="socalmainbox ">
+                        <div class="socalbox socalicon">
+                            <a href="https://api.whatsapp.com/send?phone=917303062845" target="_blank">
+                              <i class="fa fa-whatsapp"></i>
+                            </a>
+                          </div>
+                        <div class="socalbox  socalicon">
+                           <a href="https://www.youtube.com/@dncrproperty" target="_blank">
+                               <i class="fa fa-youtube"></i>
+                           </a>
+                        </div>
+                        <div class="socalbox  socalicon">
+                            <a href="https://www.facebook.com/dncrproperty1" target="_blank">
+                            <i class="fa fa-facebook socIcon"></i>
+                        </a>
+                        </div>
+                        <div class="socalbox  socalicon">
+                            <a href="https://www.instagram.com/dncrproperty2/" target="_blank">
+                            <i class="fa fa-instagram socIcon"></i>
+                        </a>
+                        </div>
+                        <div class="socalbox  socalicon">
+                            <a href="https://www.google.com/" target="_blank">
+                            <i class="fa fa-google socIcon"></i>
+                        </a>
+                        </div>
+                        <div class="socalbox  socalicon">
+                            <a href="https://www.linkedin.com/in/dncrproperty/" target="_blank">
+                            <i class="fa fa-linkedin socIcon"></i>
+                        </a>
+                        </div>
+
+                        <div class="socalbox  socalicon">
+                            <a href="https://twitter.com/dncrproperty2" target="_blank">
+                            <i class="fa fa-twitter socIcon"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <div class="">
+          <h6 class="text-center">
+            Copyright ©2022-<span id="get-year">2021</span>&nbsp;dncrproperty.com All rights reserved.
+          </h6>
+        </div>
+        <div class="">
+          <a class="linkCompany" href="https://ansits.com" target="_blank"> <h6 style="color: grey;">Powered by&nbsp;<img src="./assets/images/footer_logo_ANSIT.png" alt="ansit.com" class="img-powered"></h6></a>
+        </div>
+      </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEODkjwCpr5XjKRZeW_BZUkdIYiNr37so&callback=initAutocomplete&libraries=places&v=weekly"
+        async></script>
+        <script>
+            const d = new Date();
+            var year = d.getFullYear();
+            document.getElementById("get-year").innerHTML = year;
+          </script>
+
+</body>
+
+</html>

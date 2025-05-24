@@ -1,0 +1,100 @@
+.imgcontainero {
+  padding: 20px;
+}
+
+.buttono {
+  margin: 0 0 0 0;
+  background: linear-gradient(90deg, #d36a1f 0%, #ee8032 100%);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttono:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+#loginEmailo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0 !important;
+  gap: 10px;
+}
+
+#loginOTPo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0 !important;
+  gap: 10px;
+}
+
+.form-group {
+  width: 90%;
+  margin-bottom: 0 !important;
+}
+
+#email-logino,
+#otp-login {
+  padding-inline: 10px;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.avataro {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Add these styles to fix box alignment */
+body > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.login-container {
+  width: 370px;
+  background-color: #ee8032;
+  padding-top: 10px;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-inner {
+  width: 360px;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#loginEmailo, 
+#loginOTPo {
+  width: 100%;
+  box-sizing: border-box;
+  /* padding: 0 20px; */
+  padding-bottom: 20px;
+}

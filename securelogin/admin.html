@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    MT Estates - Super Admin Login
+  </title>
+  <meta name="keywords" content="list property for rent, list property for sale, real estate Delhi NCR" />
+  <meta name="description"
+    content="Home is where the heart is!,No matter you are renting, selling or buying a property in Delhi NCR We are here for you to help!" />
+  <link rel="canonical" href="https://mtestates.bsite.net/" />
+  <meta property="og:title" content="https://mtestates.bsite.net/" />
+  <meta property="og:site_name" content="mtestates.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description"
+    content="Properties to buy in city,Let's start your journey with us, your dream will come true" />
+
+  <meta name="author" content="mtestates.com" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="yahooseeker" content="index, follow" />
+  <meta name="msnbot" content="index, follow" />
+  <meta name="robots" content="index, follow" />
+  <meta name="distribution" content="INDIA" />
+  <meta name="revisit-after" content="3 days" />
+  <meta name="rating" content="general" />
+  <meta name="language" content="en-us" />
+  <meta name="document-type" content="Public" />
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/df1kus7ro/image/upload/f_auto,q_auto/v1/MTEstates/logos/b1xlhks4jkwxpycswjrj" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- <link href="../assets/css/index.css" rel="stylesheet" /> -->
+  <!-- <link href="../assets/css/Responsive.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="./admin.css">
+  <script src="../partners/app.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <div class="center-screen"
+    style="background-image: url('https://res.cloudinary.com/df1kus7ro/image/upload/f_auto,q_auto/v1/MTEstates/mulvci3vbcquynpgdczn');">
+
+    <!-- Content goes here, keep this part -->
+    <h5 class="text-danger text-center ng-star-inserted" style="
+          display: none;
+          position: absolute;
+          top: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+        " id="invalidUser-logino">
+      Password looks incorrect!
+    </h5>
+
+    <div style="
+          width: 370px;
+          height: 545px;
+          background-color: #183A65;
+          padding-top: 10px;
+          border-radius: 1rem;
+          text-align: center;
+          z-index: 1;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        ">
+      <span style="
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+          ">
+        <i class="fa fa-lock" style="font-size: 24px"> &nbsp;</i>SECURE LOGIN
+      </span>
+      <div style="
+            width: 360px;
+            height: 485px;
+            background-color: whitesmoke;
+            margin-left: 5px;
+            margin-top: 10px;
+            border-radius: 0.5rem;
+            padding-top: 5px;
+          ">
+        <div class="imgcontainero">
+          <div style="
+                font-size: 22px;
+                font-weight: 500;
+                color: #183A65;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                font-weight: 500;
+              ">
+            Admin Panel
+          </div>
+          <a href="https://mtestates.bsite.net"><img
+              src="https://res.cloudinary.com/df1kus7ro/image/upload/f_auto,q_auto/v1/MTEstates/logos/b1xlhks4jkwxpycswjrj"
+              alt="MT Estates Logo" class="avataro" style="max-width: 180px; margin-top: 5px;" /></a>
+          <!-- Adding "App & CRM" text below the logo -->
+          <div style="
+                font-size: 16px;
+                font-weight: 500;
+                color: #183A65;
+                margin-top: 5px;
+              ">
+            App & CRM
+          </div>
+        </div>
+        <div style="padding-left: 0; margin-top: 0%; width: 100%; text-align: center;" id="loginEmailo">
+          <div class="form_container">
+            <div class="form-group" style="position: relative; width: 90%;">
+              <div class="input_wrap">
+                <input type="text" placeholder=" " required class="form-control floatingLabel"
+                  style="background-color: white; width: 100%;" name="unameo" id="email-logino"
+                  onblur="addRequired('email-logino')" oninput="removeValidationo(true)"
+                  onkeydown="if(event.key===' ')event.preventDefault();" />
+
+                <label>
+                  <i class="fa fa-user" style="font-size: 16px"></i>&nbsp;&nbsp;Email
+                </label>
+              </div>
+              <small class="text-danger" style="display: none; position: absolute; left: 0; bottom: -20px; color: red"
+                id="notValidEmailLogino">* Invalid Email</small>
+              <small class="text-danger" style="display: none; position: absolute; left: 0; bottom: -20px;"
+                id="email-req-logino">* Required</small>
+              <small class="text-danger" style="display: none; position: absolute; left: 0; bottom: -20px; color: red"
+                id="emaildoesnotexist-logino">* Email id does not exist in the system</small>
+            </div>
+            <button class="buttono" onclick="nextOrPreviousStepAdmin(true, 'dncrproperty.com')" id="adminControl"
+              style="margin-top: 10px;">
+              <span id="continue_text">Continue</span>
+              <i class="fa fa-spinner fa-spin" id="emailSpinnero"
+                style="display: none; color: white; font-size: 16px; margin-left: 5px;"></i>
+            </button>
+          </div>
+          <label>
+            <span class=""><a style="text-decoration: none; color: #183A65;" href="https://mtestates.bsite.net">Back to
+                Website</a></span>
+          </label>
+          <div class="copyright-text">
+            <span id="copyrightText" style="text-decoration: none; color: black">
+              ©2023&nbsp;<a href="https://mtestates.bsite.net" style="display: inline-block;">mtestates.com</a>
+            </span>
+          </div>
+        </div>
+
+        <div style="padding-left: 0; margin-top: 0%; display: none; width: 100%; text-align: center;" id="loginOTPo">
+          <div class="form_container">
+            <div class="form-group" style="position: relative; width: 90%;">
+              <div class="input_wrap">
+                <input type="text" placeholder=" " onblur="addRequired('otp-login')"
+                  style="background-color: white; width: 100%;" class="form-control floatingLabel" required
+                  name="inputo" id="otp-login" maxlength="6" oninput="removeValidation(false)"
+                  onkeydown="if(event.key===' ')event.preventDefault();" />
+                <label>
+                  <i class="fa fa-key" style="font-size: 16px"></i>&nbsp;&nbsp;Enter OTP
+                </label>
+              </div>
+              <small class="text-danger" style="display: none; position: absolute; left: 0; bottom: -20px; color: red"
+                id="otp-req-logino">
+                * Required
+              </small>
+            </div>
+            <button class="buttono" id="adminLogin" onclick="verifyOTP()" style="margin-top: 10px;">
+              <span id="otp_text">Verify OTP</span>
+              <i class="fa fa-spinner fa-spin" id="loginspinnero"
+                style="display: none; color: white; font-size: 16px; margin-left: 5px;"></i>
+            </button>
+          </div>
+          <label>
+            <span class=""><a style="text-decoration: none; color: #183A65;" href="https://mtestates.bsite.net">Back to
+                Website</a></span>
+          </label>
+          <div class="copyright-text">
+            <span id="copyrightText2" style="text-decoration: none; color: black">
+              ©2023&nbsp;<a href="https://mtestates.com" style="display: inline-block;">mtestates.com</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var startYear = 2022;
+      var currentYear = new Date().getFullYear();
+      var copyrightText = document.getElementById("copyrightText");
+      var copyrightText2 = document.getElementById("copyrightText2");
+
+      if (currentYear > startYear) {
+        copyrightText.innerHTML = `©${startYear}-${currentYear} <a href="https://mtestates.com">mtestates.com</a>`;
+        if (copyrightText2) {
+          copyrightText2.innerHTML = `©${startYear}-${currentYear} <a href="https://mtestates.com">mtestates.com</a>`;
+        }
+      }
+    });
+  </script>
+  <script>
+    const adminControlButton = document.getElementById("adminControl");
+    const adminLoginButton = document.getElementById("adminLogin");
+    let enterPressed = false;
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" && !enterPressed) {
+        enterPressed = true;
+        if (document.activeElement.id === "email-logino") {
+          adminControlButton.click();
+        } else if (document.activeElement.id === "otp-login") {
+          adminLoginButton.click();
+        }
+      }
+    });
+
+    document.addEventListener("keyup", function (event) {
+      if (event.key === "Enter") {
+        enterPressed = false;
+      }
+    });
+  </script>
+</body>
+
+</html>

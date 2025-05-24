@@ -1,0 +1,294 @@
+.errordesign{
+    position: absolute;
+    display: none;
+}
+
+/* Full screen background styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.twocolordiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Center content properly */
+.center-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark transparent overlay */
+.center-screen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    backdrop-filter: blur(2px);
+}
+
+/* Ensure login form appears above overlay */
+.center-screen > div {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Style form elements better */
+.input_wrap {
+    position: relative;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.form-control {
+    height: 48px;
+    padding-left: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    width: 100%;
+    transition: all 0.25s ease;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+.form-control:focus {
+    border-color: #183A65;
+    box-shadow: 0 0 0 3px rgba(24, 58, 101, 0.2);
+    outline: none;
+}
+
+.floatingLabel {
+    font-size: 15px;
+}
+
+.floatingLabel + label {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    margin-left: 15px;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+.floatingLabel:focus + label, 
+.floatingLabel:not(:placeholder-shown) + label {
+    transform: translateY(-24px) scale(0.85);
+    font-size: 12px;
+    background-color: white;
+    padding: 0 6px;
+    color: #183A65;
+    font-weight: 500;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.imgcontainero {
+    text-align: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.imgcontainero:hover {
+    transform: scale(1.02);
+}
+
+.avataro {
+    max-width: 160px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.1));
+}
+
+.buttono {
+    width: 90%;
+    padding: 12px;
+    background-color: #183A65;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttono:hover {
+    background-color: #12293f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttono:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.buttono::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.buttono:focus::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* Consistent error styling */
+.text-danger {
+    color: #dc3545 !important;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+    display: block;
+    transform: translateY(-10px);
+}
+
+/* New color scheme links */
+a.color-link, a {
+    text-decoration: none;
+    color: #183A65;
+    transition: color 0.2s ease;
+    position: relative;
+    font-weight: 500;
+}
+
+a.color-link:hover, a:hover {
+    color: #C7A580;
+}
+
+/* Remove these two rules that create the line animation */
+/*
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: #C7A580;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+*/
+.form-group {
+    margin-bottom: 0 !important;
+}
+
+/* Add this to ensure no underlines appear on any links */
+a {
+    text-decoration: none !important;
+}
+
+/* Container background colors */
+.primary-bg {
+    background-color: #183A65;
+}
+
+.secondary-bg {
+    background-color: #C7A580;
+}
+
+/* Copyright text positioning */
+.copyright-text {
+    margin-top: 18px;
+    font-size: 13px;
+    text-align: center;
+    color: #6c757d;
+    opacity: 0.8;
+}
+
+/* Added styles for error message animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+.text-danger.show-error {
+    display: block !important;
+    animation: shake 0.5s;
+}
+
+/* Better spinner animation */
+.fa-spin {
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
