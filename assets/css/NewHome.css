@@ -22,13 +22,16 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    
         align-items: center;
         background-color: #f4d19b;
       }
 
       .hero-section h1 {
-        font-size: 3rem;
+        font-size: 5rem;
+        text-align: justify;
         margin-bottom: 20px;
+            margin-right: 450px;
         color: #fff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         z-index: 1;
@@ -578,3 +581,6 @@ body {
           padding: 20px;
         }
       }
+
+
+      
