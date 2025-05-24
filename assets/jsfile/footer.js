@@ -179,9 +179,19 @@ function createFooter() {
       <div class="footer-content">
         <div class="footer-contact">
           <h3>CONTACT</h3>
+             
           <p class="contact-icon"><i class="fas fa-map-marker-alt"></i> A-Block, Sector 2, Noida Uttar Pradesh - 201301</p>
-          <p class="contact-icon"><i class="fas fa-phone"></i> +91 7303062845</p>
-          <p class="contact-icon"><i class="fa-brands fa-whatsapp"></i> +91 9718361550</p>
+     <p class="contact-icon">
+  <i class="fas fa-phone"></i>
+  <a href="https://api.whatsapp.com/send?phone=917303062845" target="_blank" aria-label="Chat on WhatsApp">+91 7303062845</a>
+</p>
+
+<p class="contact-icon">
+  <i class="fa-brands fa-whatsapp"></i>
+  <a href="https://api.whatsapp.com/send?phone=919718361550" target="_blank" aria-label="Chat on WhatsApp">+91 9718361550</a>
+</p>
+
+
           <p class="contact-icon"><i class="fas fa-envelope"></i> info@mtestates.com</p>
         </div>
         <div class="footer-middle">
@@ -191,10 +201,10 @@ function createFooter() {
         <div class="footer-links">
           <h3>QUICK LINKS</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -205,9 +215,9 @@ function createFooter() {
         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
       <div class="footer-bottom">
-        <a href="#">FAQ</a>
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="terms_condition.html">Terms and Conditions</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
       </div>
     </footer>
   `;
