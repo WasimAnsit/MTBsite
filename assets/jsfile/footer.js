@@ -180,7 +180,7 @@ function createFooter() {
         <div class="footer-contact">
           <h3>CONTACT</h3>
              
-          <p class="contact-icon"><i class="fas fa-map-marker-alt"></i> A-Block, Sector 2, Noida Uttar Pradesh - 201301</p>
+          <p class="contact-icon"><i class="fas fa-map-marker-alt"></i> C-116 GF, OfficeOn <br/>Sector 2, Noida <br/>Uttar Pradesh - 201301</p>
      <p class="contact-icon">
   <i class="fas fa-phone"></i>
   <a href="https://api.whatsapp.com/send?phone=917303062845" target="_blank" aria-label="Chat on WhatsApp">+91 7303062845</a>
@@ -201,10 +201,10 @@ function createFooter() {
         <div class="footer-links">
           <h3>QUICK LINKS</h3>
           <ul>
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="project.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
       </div>
@@ -215,9 +215,9 @@ function createFooter() {
         <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
       <div class="footer-bottom">
-        <a href="faq.html">FAQ</a>
-        <a href="terms_condition.html">Terms and Conditions</a>
-        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="https://dncrproperty.com/faq.html" target=_blank>FAQ</a>
+        <a href="https://dncrproperty.com/terms_conditions.html" target=_blank >Terms and Conditions</a>
+        <a href="https://dncrproperty.com/privacy_policy.html" target=_blank>Privacy Policy</a>
       </div>
     </footer>
   `;

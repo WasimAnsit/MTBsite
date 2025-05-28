@@ -1,414 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTEstates</title>
-    <link as="style" onload="this.onload=null;this.rel='stylesheet'" rel="preload"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link as="style" onload="this.onload=null;this.rel='stylesheet'" href="assets/css/Home.css" rel="preload">
-    <link as="style" onload="this.onload=null;this.rel='stylesheet'" href="assets/css/Responsive.css" rel="preload">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link as="style" onload="this.onload=null;this.rel='stylesheet'" rel="preload"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MT Estates</title>
+   <link rel="stylesheet" href="assets/css/NewHome.css">
+    <script src="assets/jsfile/header.js" defer></script>
+    <script src="assets/jsfile/footer.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="topnav row" style="z-index: 10;position: sticky;width: 100%;justify-content: space-between;">
-        <!-- <div class="topnav row" style="z-index: 10;position: sticky;width: 100%;align-items: center;"> -->
-            <div class="logo">
-                <h1 class="hero-title"></h1>
-                <img src="./assets/Images/Mt estates logo-01.png"
-                style="object-fit: cover; width: 100%; height: 100%;" class="" alt="Real Estate">
+    <div id="header-container"></div>
+
+    <!-- Hero Section with Video -->
+    <section class="hero-section">
+        <h1 id="mainheading">Real Estate <br/> Developer Company </h1>
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://res.cloudinary.com/dzauu64ta/video/upload/f_auto:video,q_auto/arkfz7uh35fpthndzn3v" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                MT Estates distinguishes itself from its competition as a pioneer in the field for Land Developing projects. Thanks to our creative approach, we are the leading Land Developer in the real estate field right now. We are able to create projects that are unmatched in terms of quality and design because of our collaboration with the elite specialists, which has helped us rise to the top in our sector. The values of honesty, integrity, and steadfast dedication form the foundation of our business.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="assets/Images/NewImage/aboutus.jpg" alt="Landscape with houses" onerror="this.src='https://via.placeholder.com/500x300?text=Image+Error';">
+            <img src="assets/Images/NewImage/Depositphotos_11497560_XL.jpg" alt="Another landscape" onerror="this.src='https://via.placeholder.com/500x300?text=Image+Error';">
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+     <section class="projects-section">
+        <h2>Our Projects</h2>
+        <div class="projects-content">
+            <div class="projects-image">
+                <img src="assets/Images/NewImage/Depositphotos_30430657_XL.jpg" alt="Land Development Project" onerror="this.src='assets/Images/NewImage/Depositphotos_30430657_XL.jpg';">
             </div>
-            <div style="border-bottom: 1px solid white;display: contents;">
-                <div class="nav-container">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <span class="nav-list">
-                                <a class="nav-item HOME" href="./_Home.html">HOME</a>
-                                <a class="nav-item" href="./about.html">ABOUT US</a>
-                            </span>
-                        </div>
-                        <div class="row">
-                            <span class="nav-list">
-                                <a class="nav-item" href="./project.html">OUR PROJECTS</a>
-                                <a class="nav-item" href="./contact.html">CONTACT US</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-info" style="cursor: pointer;">
-                    <i class="fa fa-phone clsIcon" style="color: #bd9e79;align-content: center;"></i>
-                    <div>
-                        <p class="contact-phone" style="margin-top: 13px">+91 7303062845</p>
-                        <p class="contact-phone" style="margin-top: -18px;">+91 7303951845</p>
-                    </div>
-                </div>
+            <div class="projects-details">
+                <p>
+                    As one of the most prosperous real estate developers, we place a high value on open communication and truthfulness in order to create trust and loyalty. Our projects have enabled many people to enjoy extraordinary lives, which is a tribute to the sustainable development of metropolitan areas. Being a leader in the field, we at MT Estates are dedicated to raise the bar for Land Development investment.
+                </p>
+                <ul>
+                    <li>Corporate Building</li>
+                    <li>Commercial Building</li>
+                    <li>Mall Construction</li>
+                    <li>Residential Plots</li>
+                </ul>
+                <a href="project.html" class="view-project-btn">View Project <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-        <div class="bg-img">
-            <video autoplay muted loop id="bg-video">
-                <source src="./assets/Images/depositphotos_317033478-stock-video-panoramic-view-vast-land.mp4"
-                    type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-            <div class="overlay"></div>
-            <div class="main-content">
-                <div style="z-index: 10;">
-                    <h2 class="main-title">Real Estate Land Developer Company</h2>
-                </div>
-                <div style="z-index: 10;">
-                </div>
-                <div class="scroll-section" style="cursor: pointer;z-index: 10;">
-                    <div class="scroll-circle">
-                        <div class="arrow">&#8595;</div>
-                    </div>
-                    <p class="scroll-text">Scroll down</p>
-                </div>
+        <!-- <div class="projects-stats">
+            <div class="stat-item">
+                <h3>2100+</h3>
+                <p>Total Projects</p>
+            </div>
+            <div class="stat-item">
+                <h3>21+</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>2000+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Awards</p>
+            </div>
+        </div> -->
+    </section>
+
+<!--Services Section -->
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-content">
+            <div class="services-image">
+                <img src="assets/Images/NewImage/service.jpg" alt="Our Services" onerror="this.src='assets/Images/Land_Project.jpg';">
+            </div>
+            <div class="services-details">
+                <p>
+                    At MT Estates, we offer a comprehensive range of services tailored to meet the diverse needs of our clients. From conceptual design to project completion, our team ensures every detail is executed with precision and excellence, delivering exceptional results every time.
+                </p>
+                <ul>
+                    <li>Land Development</li>
+                    <li>Architectural Design</li>
+                    <li>Construction Management</li>
+                    <li>Property Consultation</li>
+                </ul>
+                <a href="#" class="view-services-btn">View Services <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
+        <!-- <div class="services-stats">
+            <div class="services-stat-item">
+                <h3>150+</h3>
+                <p>Land Developments</p>
+            </div>
+            <div class="services-stat-item">
+                <h3>300+</h3>
+                <p>Design Projects</p>
+            </div>
+            <div class="services-stat-item">
+                <h3>500+</h3>
+                <p>Consultations</p>
+            </div>
+            <div class="services-stat-item">
+                <h3>100+</h3>
+                <p>Completed Builds</p>
+            </div>
+        </div> -->
+    </section>
 
-        <div class="about-section">
-            <!-- <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/91a6aa32f517b130ad2d6d69025047955b99ef228b252dc836aa2606d8b8b6f0?apiKey=1add86586cf3467d9690a24b794fe304&"
-                class="about-image" alt="About Us"> -->
-            <img src="./assets/Images/Background.jpg" class="about-image" alt="About Us">
-            <div class="about-content-wrapper">
-                <div class="about-main">
-                    <div class="about-left-col">
-                        <div class="about-left-title">About Us</div>
-                        <p class="about-left-text">MT Estates distinguishes itself from its competition as a pioneer in
-                            the field for Land Developing
-                            projects. Thanks to our creative approach, we are the leading Land Developer in the real
-                            estate field
-                            right now. We are able to create projects that are unmatched in terms of quality and design
-                            because
-                            of our collaborations with elite specialists, which has helped us rise to the top in our
-                            sector. The
-                            values of honesty, integrity, and steadfast dedication form the foundation of our business.
-                        </p>
-                    </div>
-                    <div class="about-right-col">
-                        <img src="./assets/Images/Home_About.jpg" class="about-image" alt="Real Estate">
-                    </div>
+   <!--Client Section -->
+    <section class="testimonials-section">
+        <h2>Our Clients</h2>
+        <p>
+           We are MT Estates work with clients in the real estate sector and other industries to assist them come up with creative approaches. As your property partners, we pledge to always act in our customers' best interests and show the utmost regard for their particular demands. Providing individualised, thorough, and thoughtful real estate guidance means we never lose sight of the bigger picture. Our comprehensive knowledge of important markets and industries, both developed and developing, will be put to use to assist you in achieving your real estate objectives and beyond.
+        </p>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="assets/Images/dncr.jpg" alt="John Doe" onerror="this.src='https://via.placeholder.com/80?text=JD';">
                 </div>
+                <p>We take pride in being a unique and customer-centric platform that helps people find places they can call of their own and live in. Every day we look for better ways to serve our clients and keep ourselves as a top choice for the people of Delhi, NCR.</p>
+                <p class="author">DNCRProperty</p>
+            </div>
+              <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="assets/Images/mhrealty.jpg" alt="Michael Brown" onerror="this.src='https://via.placeholder.com/80?text=MB';">
+                </div>
+                <p>As a team, we will celebrate your uniqueness! In addition to being a platform, MHRealty transforms into a committed haven seeker whose only goal is to find your ideal home in Navi Mumbai, the vibrant center of Mumbai.</p>
+                <p class="author">MHRealty</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="assets/Images/deccanrealty.png" alt="Jane Smith" onerror="this.src='https://via.placeholder.com/80?text=JS';">
+                </div>
+                <p>Discover beautifully designed homes in BANGALORE
+Start your property journey with us, where dreams take shape into exceptional living spaces
+</p>
+                <p class="author">DeccanRealty</p>
+            </div>
+          
+        </div>
+    </section>
+    <!-- Updated Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+            Have a question or need assistance? Reach out to us, and our team at MT Estates will be happy to help you with your real estate needs.
+        </p>
+        <div class="contact-content">
+            <a href="contact.html#CUname" class="contact-btn">Contact Us <i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+   <!--Testimonials Section -->
+    <!-- <section class="testimonials-section">
+        <h2>Testimonials</h2>
+        <p>
+            Hear what our clients have to say about their experience with MT Estates. We take pride in delivering exceptional service and creating lasting relationships.
+        </p>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="assets/Images/Photo_Person.png" alt="John Doe" onerror="this.src='https://via.placeholder.com/80?text=JD';">
+                </div>
+                <p>MT Estates made our dream home a reality. Their attention to detail is unmatched!</p>
+                <p class="author">Barbara D. Smith</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="assets/Images/Photo_Person.png" alt="Jane Smith" onerror="this.src='https://via.placeholder.com/80?text=JS';">
+                </div>
+                <p>The best real estate company we've worked with. Highly professional and reliable.</p>
+                <p class="author">Barbara D. Smith</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="assets/Images/Photo_Person.png" alt="Michael Brown" onerror="this.src='https://via.placeholder.com/80?text=MB';">
+                </div>
+                <p>Their projects are truly innovative. We love our new office space!</p>
+                <p class="author">- Michael Brown</p>
             </div>
         </div>
-    </div>
-    <div class="projects-content">
-        <div class="project-main-wrapper">
-            <h3 class="project-header">OUR PROJECTS</h3>
-            <p class="project-description">As one of the most prosperous real estate developers, we place a high value
-                on open
-                communication and truthfulness in order to create partnerships that endure a lifetime and is based
-                on trust and loyalty. Our efforts have enabled many people to enjoy extraordinary lives, which is a
-                tribute to the sustainable development of metropolitan areas. Being a leader in the field, we at MT
-                Estates are dedicated to raise the bar for Land Developing investment.</p>
-            <div class="projects-container">
-                <div class="col-md-12 row" style="padding-right: 0px; padding-left: 0px;">
-                    <div class="col-md-8">
-                        <img src="./assets/Images/Frame_133.png" class="project-thumbnail" alt="Corporate Building">
-                    </div>
-                    <div class="col-md-4">
-                        <div class="project-details">
-                            <span class="project-title">Corporate Building</span>
-                            <span class="project-name">Commercial Building</span>
-                            <span class="project-name">Mall Construction</span>
-                            <span class="project-name">Residiential Plots</span>
-                            <div class="view-button-wrapper" onclick="redirectToProject()">
-                                <button class="view-button">View Project</button>
-                                <div class="arrow">&#8594;</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section> -->
 
-    <div class="stats-section">
-        <div class="stats-container">
-            <div class="stats-box">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d4957cc47aa558a502e91307f731f27ec16d73769e806b6cc3d2379ae8091c4?apiKey=1add86586cf3467d9690a24b794fe304&"
-                    alt="Total Projects Icon">
-                <div class="stats-icon-wrapper">
-                    <p class="stats-number">2100+</p>
-                    <p class="stats-details">Total Projects</p>
-                </div>
-            </div>
-            <div class="stats-box">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d4957cc47aa558a502e91307f731f27ec16d73769e806b6cc3d2379ae8091c4?apiKey=1add86586cf3467d9690a24b794fe304&"
-                    alt="Years of Experience Icon">
-                <div class="stats-icon-wrapper">
-                    <p class="stats-number">21+</p>
-                    <p class="stats-details" style="margin-top: -25px;">Years of Experience</p>
-                </div>
-            </div>
-            <div class="stats-box">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d4957cc47aa558a502e91307f731f27ec16d73769e806b6cc3d2379ae8091c4?apiKey=1add86586cf3467d9690a24b794fe304&"
-                    alt="Happy Customer Icon">
-                <div class="stats-icon-wrapper">
-                    <p class="stats-number">2000+</p>
-                    <p class="stats-details" style="margin-top: -25px;">Happy Customers</p>
-                </div>
-            </div>
-            <div class="stats-box">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d4957cc47aa558a502e91307f731f27ec16d73769e806b6cc3d2379ae8091c4?apiKey=1add86586cf3467d9690a24b794fe304&"
-                    alt="Awards Icon">
-                <div class="stats-icon-wrapper">
-                    <p class="stats-number">50+</p>
-                    <p class="stats-details">Awards</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="testimonials-section">
-        <div class="testimonials-container row">
-            <div class="col-md-8">
-                <h4 class="testimonials-header">OUR TESTIMONIALS</h4>
-                <p class="testimonials-description">These are some feedbacks from our previous clients and customers.
-                    Please do have a look: </p>
-            </div>
-            <div class="col-md-4 respo_mobile">
-                <div class="scroll-circle-testimonial">
-                    <div class="arrow-testimonial">&#8592;</div>
-                </div>
-                <div class="scroll-circle-testimonial">
-                    <div class="arrow-testimonial">&#8594;</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="testimonials-container row testimonialsNewStyle">
-            <div class="col-md-4 testimonial">
-                <p class="testimonial-text">We’re so satisfied that we contacted with MT ESTATES and are pleased with
-                    our
-                    relationship. It was a problematic task but they did a true job and tackled the procedure
-                    skilfully, comprising dealing with the numerous authorities and stakeholders.</p>
-            </div>
-            <div class="col-md-4 person-info-body">
-                <div class="person-info-innerBody">
-                    <div class="person-info">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e47168603aa559c0e258a2b7c5b5460e221f540db6bce86dc51f3ea05503886b?apiKey=1add86586cf3467d9690a24b794fe304&"
-                            alt="Person Icon">
-                        <p class="person-text">MT ESTATES always communicated with us well. There was someone on the end
-                            of the
-                            phone always and they were content to stop by and check if we require anything was so
-                            contended.</p>
-                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5356fab2abe172bddf68156ff2d00a3e374ff245661d2353869275ee354a90ab?apiKey=1add86586cf3467d9690a24b794fe304&"
-                            alt="Quote Icon">
-                        <p class="person-name">Barbara D. Smith</p>
-                    </div>
-                </div>
-                <span
-                    style="width: 90px; height: 90px; border-radius: 50%; overflow: hidden; display: inline-block;margin-top: -40px;">
-                    <img src="./assets/Images/Photo_Person.png" alt="Quote Icon"
-                        style="object-fit: cover; width: 100%; height: 100%; border-radius: 50%;">
-                </span>
-            </div>
-            <div class="col-md-4 testimonial">
-                <p class="testimonial-text">We have collaborated with MT ESTATES since several years as it’s a company
-                    with honesty
-                    and what they describe is what you receive, with zero hidden charges.</p>
-            </div>
-        </div>
-
-        <div class="testimonials-container row mt-5 p-5">
-            <div class="col-md-12">
-                <h4 class="testimonials-header">OUR CLIENTS</h4>
-                <p class="testimonials-description newDIV">We are MT Estates work with clients in the real estate sector
-                    and other industries to assist them
-                    come up with creative approaches. As your property partners, we pledge to always act in our
-                    customers&#39; best interests and show the utmost regard for their particular demands. Providing
-                    individualised, thorough, and thoughtful real estate guidance means we never lose sight of the
-                    bigger picture. Our comprehensive knowledge of important markets and industries, both developed
-                    and developing, will be put to use to assist you in achieving your real estate objectives and
-                    beyond.</p>
-            </div>
-        </div>
-        <div class="testimonials-container row mt-3 p-5">
-            <div class="col-md-12">
-                <h4 class="testimonials-header">OUR PEOPLE</h4>
-                <p class="testimonials-description newDIV2">The connection is well-rounded, and MT ESTATES is dedicated
-                    to promoting a welcoming and varied
-                    work environment. By providing them with opportunities to shine, we hope to show them how
-                    much they mean to us and to ensure that they have everything they need to succeed. At MT Estates,
-                    we think that everyone should have a voice in how our business develops and how real estate and
-                    the built environment impact the communities we serve in the future. We encourage open
-                    communication within the workplace and offer each employee the autonomy to make their own
-                    judgements. <br><br>
-                    Teams that are invested in each other and the task at hand give exceptional, dedicated service to
-                    their clients. Everyone is encouraged to contribute to the expansion and development of our
-                    company, and new ideas are valued and acknowledged in our work environment, where everyone&#39;s
-                    perspectives are valued. MT Estates is a well-known Real Estate Land Developer Company that
-                    specialises in building and developing land. Because of the numerous upscale commercial and
-                    industrial it has developed, it is among the most well-known names in the industry.</p>
-            </div>
-        </div>
-
-        <div class="projects-content-aboutus">
-            <div class="project-main-wrapper">
-                <h3 class="project-header-about">Services we provide for further development:</h3>
-                <div class="projects-container">
-                    <div class="reason-item col-md-4">
-                        <h3 class="reason-title">Rescaling</h3>
-                        <p class="reason-description">Changes to the room&#39;s current arrangement and orientation to
-                            enlarge or reduce its size</p>
-                    </div>
-                    <div class="vertical-line"></div>
-                    <div class="reason-item col-md-4">
-                        <h3 class="reason-title">Cost consultancy</h3>
-                        <p class="reason-description">Cost advice includes everything from benchmarking and value
-                            generating strategies to cost and
-                            budget plans.</p>
-                    </div>
-                    <div class="vertical-line"></div>
-                    <div class="reason-item col-md-4">
-                        <h3 class="reason-title">Planning &amp; Designing</h3>
-                        <p class="reason-description">Making contributions to the planning and design of the project
-                            from the beginning to the end.</p>
-                    </div>
-                </div>
-                <hr class="custom-hr-about">
-                <div class="projects-container">
-                    <div class="reason-item col-md-4">
-                        <h3 class="reason-title">Design &amp; Material Consultancy</h3>
-                        <p class="reason-description">As a Real Estate Land Developer Company, we aim to be proactive
-                            for the purpose of efficient project management and adaptable for the benefit of our
-                            clients. </p>
-                    </div>
-                    <div class="vertical-line-invisible"></div>
-                    <div class="reason-item col-md-4">
-                        <h3 class="reason-title">Property Shortlisting</h3>
-                        <p class="reason-description">All of the properties that are currently up for sale or buy can be
-                            found here.</p>
-                    </div>
-                    <div class="vertical-line-invisible"></div>
-
-                    <div class="reason-item col-md-4">
-                        <h3 class="reason-title">Reputation always matters</h3>
-                        <p class="reason-description">In the building sector, MT Estates has come to represent
-                            creativity and leadership. With the support
-                            of a committed team of knowledgeable engineers, architects, planners, and designers, the
-                            organisation has completely transformed the construction industry.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="aboveFooter-content mt-1">
-            <!-- <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a59295f97c18ae2b7a46d909b75ecf4af4cf74fb0887a74c21a53314a3ff0baf?apiKey=1add86586cf3467d9690a24b794fe304&"
-            class="testimonial-person-image" alt="Testimonial Person"> -->
-            <div class="newContainer tabContainer">
-                <div class="reverseMode">
-                    <div class="col-md-9 tabContainerBody">
-                        <h4 class="aboveFooter-header">
-                            We are there for you from welcoming your new home to saying <br>goodbye to your previous
-                            home.
-                        </h4>
-                        <p class="testimonials-description">MT ESTATES is a fantastic choice to take into consideration
-                            if you're searching for a superior lands in a proper location. Find an everlasting quality
-                            attached with their name.</p>
-                    </div>
-                    <div class="contact-button-wrapper col-md-3" onclick="redirectToContact()">
-                        <button class="contact-button">Contact Us
-                            <div class="arrow">&#8594;</div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="final-footer">
-            <!-- <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/12db74af899bc5154912591dfaac2b74a26f436f6756b2fbe6fe06e454df60ec?apiKey=1add86586cf3467d9690a24b794fe304&"
-                class="final-footer-image PP" alt="Footer Decorative Image"> -->
-            <img src="./assets/Images/BAckground2.jpg" class="final-footer-image PP" alt="Footer Decorative Image">
-            <div class="final-footer-container">
-                <div class="col-md-12 final-footer-content">
-                    <div class="footer-address col-md-4">
-                        <h6 class="footer-address-header">CONTACT</h6>
-                        <div class="address-item">
-                            <i class="fa fa-map-marker clsIcon"></i>
-                            <p class="address-text">A-Block, Sector 2, Noida <br> Uttar Pradesh - 201301
-
-                            </p>
-                        </div>
-                        <div class="address-item">
-                            <i class="fa fa-phone clsIcon"></i>
-                            <p class="address-text">+91 7303062845<br>+91 7303951845</p>
-                        </div>
-                        <div class="address-item">
-                            <i class="fa fa-envelope clsIcon" style="margin-top: -8px;"></i>
-                            <p class="address-text">info@dncrproperty.com</p>
-                        </div>
-                    </div>
-                    <div class="footer-company-info col-md-4">
-                        <h6 class="footer-company-header mt-3">MT Estates</h6>
-                        <p class="footer-company-description">As a Real Estate Land Developer Company, we aim to be
-                            proactive for the purpose of efficient project management and adaptable for the benefit of
-                            our
-                            clients.</p>
-                        <i class="fa fa-facebook socIcon"></i>
-                        <i class="fa fa-instagram socIcon"></i>
-                        <i class="fa fa-twitter socIcon"></i>
-                    </div>
-                    <div class="footer-navigation col-md-4">
-                        <h6 class="footer-nav-header">Quick Links</h6>
-                        <ul class="footer-nav-list" style="cursor: pointer;">
-                            <a href="./home.html" style="color: black;text-decoration: none;">
-                                <li>Home</li>
-                            </a>
-                            <a href="./about.html" style="color: black;text-decoration: none;">
-                                <li>About</li>
-                            </a>
-                            <a href="./project.html" style="color: black;text-decoration: none;">
-                                <li>Projects</li>
-                            </a>
-                            <a href="./contact.html" style="color: black;text-decoration: none;">
-                                <li>Contact Us</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <hr class="custom-hr">
-                <div class="footer-bottom">
-                    <p class="footer-copyright">Copyright ©2024 Ansits.com. All rights reserved.</p>
-                    <div class="footer-links" style="cursor: pointer;z-index: 1000;">
-                        <a class="footer-link" href="./faq.html">FAQ</a>
-                        <a class="footer-link" href="./terms_condition.html">Terms and Conditions</a>
-                        <a class="footer-link" href="./privacy_policy.html">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function redirectToContact() {
-            window.location.href = "./contact.html";
-        }
-        function redirectToProject() {
-            window.location.href = "./project.html";
-        }
-        function openWhatsApp(phoneNumber) {
-            const whatsappUrl = 'https://api.whatsapp.com/send?phone=' + encodeURIComponent(phoneNumber);
-            window.open(whatsappUrl, '_blank');
-        }
-
-        function redirectToPage() {
-            window.location.href = "./index.html";
-        }
-        document.querySelector('.scroll-section').addEventListener('click', function () {
-            document.querySelector('.final-footer').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
+    <div id="footer-container"></div>
 </body>
-
 </html>

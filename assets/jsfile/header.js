@@ -158,10 +158,10 @@ function createHeader() {
         <img src="assets/Images/Mt estates logo-01.png" alt="MT Estates Logo" onerror="this.src='https://via.placeholder.com/80?text=Logo+Error';">
       </div>
       <ul class="nav-links">
-        <li><a href="_Home.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="project.html">Our Projects</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
       <div class="hamburger">
         <i class="fa-solid fa-bars"></i>
@@ -169,10 +169,10 @@ function createHeader() {
     </header>
     <div class="mobile-menu">
       <ul>
-        <li><a href="_Home.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="project.html">Our Projects</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="project.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </div>
     <div class="overlay"></div>

@@ -78,7 +78,7 @@ body {
         font-size: 2.5rem;
         margin-bottom: 20px;
         color: #000;
-        text-transform: uppercase;
+       
       }
 
       .about-content p {
@@ -115,7 +115,6 @@ body {
 
       .projects-section h2 {
         font-size: 2.5rem;
-        text-transform: uppercase;
         margin-bottom: 20px;
         color: #000;
       }
@@ -227,7 +226,6 @@ body {
 
       .services-section h2 {
         font-size: 2.5rem;
-        text-transform: uppercase;
         margin-bottom: 20px;
         color: #000;
         position: relative;
@@ -436,7 +434,6 @@ body {
 
       .testimonials-section h2 {
         font-size: 2.5rem;
-        text-transform: uppercase;
         margin-bottom: 20px;
         color: #000000;
         position: relative;
@@ -506,8 +503,7 @@ body {
         font-size: 1rem;
         color: #333;
         line-height: 1.6;
-       font-weight: bold;
-        position: relative;
+              position: relative;
       }
 
       .testimonial-card p::before,
